@@ -1,0 +1,98 @@
+.revenue-chart-container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 24px !important;
+  border-radius: 16px !important;
+  margin: 20px 0;
+
+  .chart-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 20px;
+
+    & .revenue-text {
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      text-align: left;
+    }
+    & .revenue-line {
+      margin: 0 20px;
+      color: #1c1c1c33;
+    }
+
+    .chart-legend {
+      display: flex;
+      gap: 20px;
+
+      .current-week {
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        margin-left: 5px;
+      }
+      & .current-value {
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+
+      .previous-week {
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        margin-left: 5px;
+      }
+      & .previous-value {
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .recharts-tooltip-wrapper {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .recharts-cartesian-axis-tick {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: right;
+  }
+
+  .recharts-line {
+    &.previous-week-line {
+      stroke: #82ca9d; /* Green color for Previous Week line */
+      stroke-width: 3px;
+    }
+
+    &.current-week-line {
+      stroke: #000; /* Black color for Current Week line */
+      stroke-width: 3px;
+      stroke-dasharray: 5 5; /* Dashed line for forecasted section */
+    }
+  }
+
+  .recharts-cartesian-axis-line {
+    display: none !important;
+  }
+}

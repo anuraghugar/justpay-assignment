@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --body-color: #000000; /* Default black text color */
+  --background-color: #ffffff; /* Default white background */
+  --notification-time-color: #1c1c1c66;
+  --customer-card: #e3f5ff;
+  --revenue-card: #f7f9fb;
+  --ant-statistic-title-customer-card: #1c1c1c;
+  --recharts-text: #1c1c1c66;
+  --revenue-chart-container: #f7f9fb;
+  --table-head-color: #1c1c1c66;
+  /* --table-body-color: white; */
+  --ant-table-cell: #f7f9fb;
+}
+
+[data-theme="dark"] {
+  --body-color: #ffffff; /* Light text color for dark theme */
+  --background-color: #141414; /* Dark background color */
+  --notification-time-color: #ffffff66;
+  --customer-card: #e3f5ff;
+  --revenue-card: #272727;
+  --ant-statistic-title-customer-card: #1c1c1c;
+  --stacked-chart-container: #272727;
+  --recharts-text: #ffffff66;
+  --revenue-chart-container: #272727;
+  --ant-table-cell: #272727;
+  --table-head-color: grey;
+  --table-body-color: white;
+}
+
+/* Apply the theme variables */
+body {
+  color: var(--body-color) !important;
+  background-color: var(--background-color) !important;
+}
+
+.ant-btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+/* .ant-menu-item-selected {
+  color: var(--primary-color) !important;
+} */
+.ant-menu-root {
+  color: var(--body-color) !important;
+  background-color: var(--background-color) !important;
+}
+.ant-menu-title-content {
+  color: var(--body-color) !important;
+  background-color: var(--background-color) !important;
+}
+
+.ant-menu-item-selected {
+  color: var(--body-color) !important;
+  background-color: var(--background-color) !important;
+  & .ant-menu-title-content {
+    color: var(--body-color) !important;
+  }
+}
+
+.ant-table-thead {
+  & .ant-table-cell {
+    color: var(--table-head-color) !important;
+    background-color: var(--ant-table-cell) !important;
+  }
+}
+
+.ant-table-tbody {
+  & .ant-table-cell {
+    color: var(--table-body-color) !important;
+    background-color: var(--ant-table-cell) !important;
+  }
+}
+
+.ant-menu-submenu-title {
+  &:hover {
+    background-color: transparent !important;
+  }
+}
+
+.ant-menu-item {
+  height: 30px !important;
+  line-height: 30px !important;
+  background-color: var(--background-color) !important;
+  &:hover {
+    background-color: var(--background-color) !important;
+  }
+}
+
+.ant-menu-inline {
+  background-color: var(--background-color) !important;
+}
+
+.ant-layout-sider {
+  background-color: var(--background-color) !important;
+}
+
+.notification-time {
+  color: var(--notification-time-color) !important;
+}
+
+.activities-time {
+  color: var(--notification-time-color) !important;
+}
+
+.ant-statistic-content {
+  color: var(--body-color) !important;
+}
+
+.order-card {
+  color: var(--body-color) !important;
+}
+
+/* .ant-statistic-title {
+  color: var(--body-color) !important;
+} */
+
+.customer-card {
+  background-color: var(--customer-card) !important;
+  & .ant-statistic-title {
+    color: var(--ant-statistic-title-customer-card) !important;
+  }
+  & .ant-statistic-content {
+    color: var(--ant-statistic-title-customer-card) !important;
+  }
+}
+
+.order-card {
+  background-color: var(--revenue-card) !important;
+  & .ant-statistic-title {
+    color: var(--body-color) !important;
+  }
+}
+
+.revenue-card {
+  background-color: var(--revenue-card) !important;
+  & .ant-statistic-title {
+    color: var(--body-color) !important;
+  }
+}
+
+.growth-card {
+  background-color: var(--customer-card) !important;
+  & .ant-statistic-title {
+    color: var(--ant-statistic-title-customer-card) !important;
+  }
+  & .ant-statistic-content {
+    color: var(--ant-statistic-title-customer-card) !important;
+  }
+}
+
+.stacked-chart-container {
+  color: var(--body-color) !important;
+  background-color: var(--stacked-chart-container) !important;
+}
+
+.recharts-text {
+  fill: var(--recharts-text) !important;
+}
+
+.revenue-chart-container {
+  background-color: var(--revenue-chart-container) !important;
+}

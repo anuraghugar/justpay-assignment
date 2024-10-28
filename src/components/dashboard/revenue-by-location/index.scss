@@ -1,0 +1,20 @@
+.revenue-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #f7f8fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  .revenue-bar {
+    fill: #82ca9d; /* Custom color for the bar */
+  }
+
+  /* Tooltip styling */
+  .recharts-tooltip-wrapper {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,50 @@
+.notification-list {
+  height: 252px !important;
+  padding-top: 20px;
+  overflow-y: auto;
+  & .notification-header {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding-left: 6px;
+    padding-bottom: 10px;
+  }
+
+  & .notification-item {
+    display: flex;
+    padding: 5px;
+
+    & .notification-icon {
+      margin-right: 8px;
+      & img {
+        background: #e3f5ff;
+        padding: 4px;
+        border-radius: 8px;
+      }
+    }
+    & .notification-content {
+      line-height: 14px;
+      & .notification-text {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+
+        margin-bottom: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 198px;
+      }
+      & .notification-time {
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+      }
+    }
+  }
+}

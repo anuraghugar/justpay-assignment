@@ -1,0 +1,47 @@
+.contact-list {
+  padding: 20px 0 10px;
+  & .contact-header {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding-left: 6px;
+    padding-bottom: 10px;
+  }
+
+  & .contact-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+
+    & .contact-icon {
+      margin-right: 8px;
+      position: relative;
+    }
+    & .contact-content {
+      line-height: 14px;
+      & .contact-text {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+
+        margin-bottom: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 198px;
+      }
+      & .contact-time {
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        color: #1c1c1c66;
+      }
+    }
+  }
+}

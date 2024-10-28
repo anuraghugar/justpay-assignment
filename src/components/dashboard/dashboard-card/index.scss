@@ -1,0 +1,110 @@
+.overview-cards {
+  .card {
+    padding: 24px;
+    border-radius: 16px;
+    gap: 8px;
+    min-width: 200px;
+    width: 202px;
+    height: 112px;
+    border: none !important;
+
+    &.order-card {
+      background-color: #f7f9fb;
+    }
+    &.revenue-card {
+      background-color: #f7f9fb;
+    }
+    &.growth-card {
+      background-color: #e5ecf6;
+    }
+
+    .title {
+      font-weight: bold;
+      color: #000;
+      font-size: 16px;
+    }
+
+    .value {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .growth {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      &.positive {
+        color: #3f8600;
+      }
+      &.negative {
+        color: #cf1322;
+      }
+    }
+  }
+}
+
+.ant-card-body {
+  padding: 0 !important;
+  display: flex !important;
+
+  & .card-style {
+    & .ant-statistic-title {
+      font-family: Inter;
+      font-size: 14px !important;
+      font-weight: 600 !important;
+      line-height: 20px !important;
+      text-align: left !important;
+
+      margin-bottom: 15px !important;
+    }
+    & .ant-statistic-content {
+      font-family: Inter !important;
+      font-size: 24px !important;
+      font-weight: 600 !important;
+      line-height: 36px !important;
+      text-align: left !important;
+    }
+  }
+
+  & .growth {
+    &.positive {
+      & .ant-statistic-content {
+        font-family: Inter !important;
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        line-height: 18px !important;
+        text-align: left !important;
+        position: absolute !important;
+        bottom: 35px !important;
+        right: 45px !important;
+        & .ant-statistic-content-prefix {
+          img {
+            position: absolute !important;
+            left: 50px !important;
+            bottom: 5px !important;
+          }
+        }
+      }
+    }
+    &.negative {
+      & .ant-statistic-content {
+        font-family: Inter !important;
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        line-height: 18px !important;
+        text-align: left !important;
+        position: absolute !important;
+        bottom: 35px !important;
+        right: 45px !important;
+        & .ant-statistic-content-prefix {
+          img {
+            position: absolute !important;
+            left: 50px !important;
+            bottom: 5px !important;
+          }
+        }
+      }
+    }
+  }
+}

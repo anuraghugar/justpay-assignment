@@ -1,0 +1,24 @@
+h4 {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+/* Example card and chart styling */
+.dashboard-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  background-color: #fff;
+}
+
+.dashboard-chart {
+  border: 1px solid #f0f0f0;
+  padding: 16px;
+  background-color: #fafafa;
+}
+
+.dashboard-table {
+  border-top: 1px solid #e8e8e8;
+  padding-top: 16px;
+}
